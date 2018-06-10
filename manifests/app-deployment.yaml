@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ref-app
+  name: simple-app
 spec:
   replicas: 2
   selector:
@@ -11,10 +11,10 @@ spec:
     metadata:
       labels:
         app: reference
-        tier: backend
+        tier: frontend
     spec:
       containers:
-        - name: app-backend
-          image: googlecontainer/echoserver:1.8
+        - name: app-frontend
+          image: dockleafdigital/k8s-simple-app:1.0
           ports:
             - containerPort: 8080

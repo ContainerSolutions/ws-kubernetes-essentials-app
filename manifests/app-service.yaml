@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: ref-app-svc
+  name: simple-app-svc
 spec:
   type: NodePort
   ports:
   - name: http
-    port: 8080
-    targetPort: 8080
+    port: 9292
+    targetPort: 9292
   selector:
-    tier: backend
+    tier: frontend
