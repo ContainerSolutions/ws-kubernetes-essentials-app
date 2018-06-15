@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bad-app
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: bad
+  template:
+    metadata:
+      labels:
+        app: bad
+        tier: backend
+    spec:
+      containers:
+        - name: app-backend
+          image: containersol/k8s-sample-app:3.14159
+          ports:
+            - containerPort: 9292
+          readinessProbe:
+            httpGet:
+              path: /neverready
+              port: 9292
+              scheme: HTTP
+            initialDelaySeconds: 5
+            timeoutSeconds: 1
+          livenessProbe:
+            httpGet:
+              path: /brokeness
+              port: 9292
+              scheme: HTTP
+            initialDelaySeconds: 15
+            periodSeconds: 30
+            timeoutSeconds: 5

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hello Kubernetes!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+    <style>
+      html { background-color: #2740F8; }
+      .jumbotron { padding: 8rem 2rem; margin-bottom: 0; }
+      h1 { font-size: 5rem; }
+      h1, h2, h3 { font-weight: normal; }
+      footer { text-align: center; font-size: 10px; padding-bottom: 32px; background-color: #e9ecef; }
+    </style>
+  </head>
+  <body>
+    <main role="main">
+      <div class="jumbotron">
+        <div class="container">
+          <h1>Hello Kubernetes!</h1>
+          <h2><strong>Hostname:</strong> <%= @hostname %></h2>
+          <h2><strong>Version:</strong> <%= @version %></h2>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      Kubernetes Foundation Workshop - Sample Application - Container Solutions
+    </footer>
+  </body>
+</html>
