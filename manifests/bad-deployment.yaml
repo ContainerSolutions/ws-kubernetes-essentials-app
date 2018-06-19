@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: app-backend
-          image: containersol/k8s-sample-app:3.14159
+        image: containersol/k8s-sample-app:3.14159
           ports:
             - containerPort: 9292
           readinessProbe:
