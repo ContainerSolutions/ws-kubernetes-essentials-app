@@ -12,7 +12,7 @@ COPY . $APP_HOME
 
 # Environmental Variables
 ENV PORT 9292
-ENV VERSION 1.0
+ENV RELEASE 1.0
 
 # Start Server
 EXPOSE 9292
