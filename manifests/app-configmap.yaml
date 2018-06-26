@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: workshop-config
+data:
+  TITLE: "Running on Kubernetes"
+  LOCATION: "Amsterdam"
+  TRAINER: "Ian Crosby"
