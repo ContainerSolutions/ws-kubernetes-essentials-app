@@ -9,7 +9,7 @@ get "/" do
 
   # Environmental Variables
   @release = ENV['RELEASE']
-  @workshop = ENV['WORKSHOP_TITLE']
+  @workshop = ENV['TITLE']
   @trainer = ENV['TRAINER']
   @location = ENV['LOCATION']
 
