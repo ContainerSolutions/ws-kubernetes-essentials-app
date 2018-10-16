@@ -1,4 +1,4 @@
-# Kubernetes Foundation Workshop Sample Application
+# Kubernetes Essentials Workshop - Sample Application
 # By Container Solutions
 
 ## Build Docker Image
